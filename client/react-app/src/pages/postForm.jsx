@@ -116,7 +116,7 @@ const PostForm = () => {
 
         <button
           type="submit"
-          className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded"
+          className="bg-blue-600 hover:bg-green-700 text-white px-6 py-2 rounded"
         >
           Update Post
         </button>

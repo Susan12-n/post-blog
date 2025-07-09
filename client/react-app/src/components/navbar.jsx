@@ -27,13 +27,13 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-end">
         <ul className="flex space-x-6 items-center">
           <li>
-            <Link to="/" className="hover:text-yellow-400">Home</Link>
+            <Link to="/" className="hover:text-blue-400">Home</Link>
           </li>
           <li>
-            <Link to="/create" className="hover:text-yellow-400">Create Post</Link>
+            <Link to="/create" className="hover:text-blue-400">Create Post</Link>
           </li>
           <li>
-            <Link to="/postform" className="hover:text-yellow-400">Post Form</Link>
+            <Link to="/postform" className="hover:text-blue-400">Post Form</Link>
           </li>
          {categories.map((category) => (
   <Link

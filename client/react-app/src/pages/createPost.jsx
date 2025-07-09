@@ -14,15 +14,12 @@ const CreatePost = () => {
   // Fetch categories from backend
   useEffect(() => {
   axios.get("http://localhost:5001/api/categories")
-    .then(res => {
-      console.log("Fetched categories:", res.data);  
+    .then((res) => {
+      console.log("Fetched categories:", res.data); // Debug here
       setCategories(res.data);
     })
-    .catch(err => {
-      console.error("Error loading categories:", err);
-    });
+    .catch((err) => console.error("Error loading categories:", err));
 }, []);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -89,22 +86,24 @@ const CreatePost = () => {
           required
         />
 
-        <select
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-          className="w-full border p-2 rounded"
-          required
-        >
-          <option value="">-- Select Category --</option>
-          {categories.length === 0 && (
-            <option disabled>🚫 No categories found</option>
-          )}
-          {categories.map((cat) => (
-            <option key={cat._id} value={cat._id}>
-              {cat.name}
-            </option>
-          ))}
-        </select>
+       <select
+  value={category}
+  onChange={(e) => setCategory(e.target.value)}
+  className="w-full border p-2 rounded"
+  required
+>
+  <option value="">-- Select Category --</option>
+  {categories.length > 0 ? (
+    categories.map((cat) => (
+      <option key={cat._id} value={cat._id}>
+        {cat.name}
+      </option>
+    ))
+  ) : (
+    <option disabled>Loading categories...</option>
+  )}
+</select>
+
 
         <input
           type="text"
@@ -124,7 +123,7 @@ const CreatePost = () => {
 
         <button
           type="submit"
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          className="bg-black-600 text-white px-4 py-2 rounded hover:bg-blue-700"
         >
           Submit Post
         </button>
