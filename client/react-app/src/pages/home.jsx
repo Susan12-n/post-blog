@@ -10,7 +10,7 @@ const Home = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/posts')
+    axios.get('http://localhost:5001/api/posts')
       .then((res) => setPosts(res.data))
       .catch((err) => console.error(err));
   }, []);

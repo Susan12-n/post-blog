@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from './components/navbar';
 import CreatePost from './pages/createPost';
 import PostForm from './pages/postForm';
+import CategoryPosts from "./pages/CategoryPosts";
 
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/create" element={<CreatePost />} />
-           <Route path="/post/:id" element={<PostForm />} />
-
+          <Route path="/category/:id" element={<CategoryPosts />} />
+           <Route path="/postform" element={<PostForm />} />
         </Routes>
 
   
