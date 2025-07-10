@@ -1,4 +1,6 @@
 const express = require('express');
+const multer = require('multer');
+
 const {
   getPosts,
   upload ,
@@ -19,7 +21,6 @@ const storage = multer.diskStorage({
     cb(null, `${Date.now()}-${file.originalname}`);
   },
 });
-const upload = multer({ storage });
 
 // PUT - update post with optional image
 router.put('/posts/:id', upload.single('image'), updatePost);

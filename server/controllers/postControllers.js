@@ -2,7 +2,7 @@
 const Post = require('../models/Post.js');
 const multer = require("multer");
 
-// Configure multer for file uploads
+// Configure multer for file uploadsmulter
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "uploads/"); // Make sure this folder exists
