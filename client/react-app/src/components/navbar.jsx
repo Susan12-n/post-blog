@@ -32,9 +32,7 @@ const Navbar = () => {
           <li>
             <Link to="/create" className="hover:text-blue-400">Create Post</Link>
           </li>
-          <li>
-            <Link to="/postform" className="hover:text-blue-400">Post Form</Link>
-          </li>
+          
          {categories.map((category) => (
   <Link
     key={category._id}
