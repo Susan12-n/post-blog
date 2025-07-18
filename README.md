@@ -8,6 +8,7 @@ A full-stack blog application built with the **MERN Stack** (MongoDB, Express.js
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
+- [Live Demo](#live-demo)
 - [Screenshots](#screenshots)
 - [Installation](#installation)
   - [Backend Setup](#backend-setup)
@@ -15,6 +16,9 @@ A full-stack blog application built with the **MERN Stack** (MongoDB, Express.js
 - [Environment Variables](#environment-variables)
 - [API Endpoints](#api-endpoints)
 - [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Author](#author)
 
 ---
 
@@ -44,15 +48,15 @@ A full-stack blog application built with the **MERN Stack** (MongoDB, Express.js
 
 ---
 
-## 🖼️ Screenshots
+## 🌐 Live Demo
 
-> Add screenshots of the app interface here  
-> Example:
+🔗 [Click here to view the live project](https://post-blog-eta.vercel.app/)
 
-- ![Homepage](screenshots/homepage.png)
-- ![Post Form](screenshots/post-form.png)
+
 
 ---
+
+
 
 ## 🛠️ Installation
 
@@ -93,10 +97,10 @@ env
 Copy
 Edit
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/mern-blog
+MONGO_URI=mongodb://localhost:27017/post-blog
 NODE_ENV=development
 📡 API Endpoints
-Posts Routes
+📄 Posts Routes
 Method	Endpoint	Description
 GET	/api/posts	Get all posts
 GET	/api/posts/:id	Get single post
@@ -104,7 +108,7 @@ POST	/api/posts	Create new post
 PUT	/api/posts/:id	Update post
 DELETE	/api/posts/:id	Delete post
 
-Categories Routes
+🏷️ Categories Routes
 Method	Endpoint	Description
 GET	/api/categories	Get all categories
 POST	/api/categories	Create new category
@@ -133,21 +137,15 @@ Contributions are welcome!
 
 Fork the repo
 
-Create your feature branch (git checkout -b feature/myFeature)
+Create your feature branch: git checkout -b feature/myFeature
 
-Commit your changes (git commit -m 'Add some feature')
+Commit your changes: git commit -m 'Add some feature'
 
-Push to the branch (git push origin feature/myFeature)
+Push to the branch: git push origin feature/myFeature
 
 Open a pull request
 
-📄 License
-This project is licensed under the MIT License.
 
 🙋‍♀️ Author
 Susan Ngesa
-GitHub
-
-yaml
-Copy
-Edit
+GitHub: https://github.com/Susan12-n
